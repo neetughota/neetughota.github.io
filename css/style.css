@@ -1,0 +1,177 @@
+body {
+  background-image:url("/nba.jpg") !important;
+  font: 10px sans-serif !important;
+  color: #FFFFFF !important;
+}
+.chartArea{
+      position: relative;}
+
+#chartOptions {
+  width: 800;
+  height: 95;
+  top:450px;  
+  position: absolute;
+  font: 16px sans-serif;
+  color: #FFFFFF
+ }
+
+#playerInfo{
+  position: absolute;
+  font: 12px sans-serif;
+  color: #FFFFFF;  
+ }
+
+#container {
+  width: 1500;
+  height: 400;
+  position: absolute;
+  background: rgba(76, 175, 80, 0.1)
+}
+h1{
+  font-size: 20px; 
+  font: "Bookman Old Style";
+}
+#title {
+  font: 14px sans-serif !important;
+  position: absolute !important;
+  top: -40px !important;
+  left: 450px !important;
+}	
+#FilterableTable {
+  width: 1500 !important;
+  height: 400 !important;
+  top:10px !important;  
+  position: absolute !important;
+  font: 12px sans-serif !important;  
+  overflow:auto !important;
+}
+.SearchBar { 
+  display: inline; 
+  position: relative;
+  left: 1%;
+}
+.SearchBar input {
+  position: relative;
+  left: 2%;
+}
+.chartArea table {
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font: 10px sans-serif;
+  overflow-y: auto;
+}
+table a:link, a:visited { text-decoration: none; }
+table a:hover, a:active { text-decoration: underline; }
+table, th, td { border: 1px solid black; }
+tbody{   
+   overflow:auto !important;   
+   height: 400 !important;
+}
+td, th {
+  padding: 5px !important;
+  text-align: center !important;
+  height: 20px !important;  
+  min-width: 100px !important;
+  font: 12px sans-serif !important;
+}
+th {  
+  background-color: #17408B !important;
+  color: #d9f0a3 !important;
+  font: 13px sans-serif !important;
+  font-weight: bold !important;
+}
+td { background-color: #17408B !important; }
+tr:hover td { background-color: #C9082A !important; }
+tr:selected td {
+  background: none repeat scroll 0 0 #FFCF8B !important;
+  color: #000000 !important;}
+  
+.bar {
+  fill: #80cbc4;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  //fill: #ddd;
+  stroke: #ddd;
+}
+  
+.tick {
+fill: #999;
+  }
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1px;
+}
+  
+.selectedline {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 8px;
+}  
+  
+ .lineSelected {
+    
+ }
+  
+circle {
+  pointer-events: all;
+  cursor: points; 
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.bar {
+  fill: #C9082A;
+}
+text {
+  font-size: 14px;
+  fill: #fff;
+  font-weight: bold;
+}
+
+path {
+  stroke: gray;
+}
+
+line {
+  stroke: gray;
+}
