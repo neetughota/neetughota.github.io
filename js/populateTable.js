@@ -576,7 +576,7 @@ if (d == "Steals Per Game") {
 
 table.selectAll("tr").on("click",function(d,i){	        
     val = document.getElementById("nbachart1").value
-	
+    playerNameMain = d
     if (document.getElementById("nbachart1").checked)
 	    {showPlayerInfo (d)}
 	if (document.getElementById("nbachart2").checked)
