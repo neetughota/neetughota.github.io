@@ -584,4 +584,23 @@ table.selectAll("tr").on("click",function(d,i){
 //	    {drawBarChart(d.Team)}
     	});
 });
+	$("input[name=nbachart]")
+    .on("click", changeEvent);
+
+function changeEvent(event){
+  if(event.originalEvent.keyCode == 0){
+    if (document.getElementById("nbachart1").checked)
+	    {showPlayerInfo (d)}
+	if (document.getElementById("nbachart2").checked)
+	    {drawBarChart(d.Team)}
+//	if (document.getElementById("nbachart3").checked)
+//	    {drawBarChart(d.Team)}
+    	});
+    //alert("click event");
+  }else{
+    console.log("keyboard event");
+    //alert("keyboard event");
+    event.preventDefault();
+  }  
+}
 } //end of function
