@@ -162,7 +162,22 @@ d3.json("data.json", function(data) { // loading data from server
         
         // exit
         rows.exit().remove();
-      })
+	var trs = document.querySelectorAll("tr");
+    	for(var i = 0; i < trs.length; i++){
+    		trs[i].addEventListener("click", function(){this.className += " selected";});
+    	}
+	
+	table.selectAll("tr").on("click",function(d,i){	            
+    		playerNameMain = d	
+    		val = document.getElementById("nbachart1").value
+    		if (document.getElementById("nbachart1").checked)
+	    		{showPlayerInfo (d)}
+		if (document.getElementById("nbachart2").checked)
+	    	{drawBarChart(d.Team)}
+
+    	});
+	    
+})
 	
   /**  sort functionality **/
   headers
@@ -573,7 +588,10 @@ if (d == "Steals Per Game") {
       }  
     }) // end of click listeners
 // table row click
-
+var trs = document.querySelectorAll("tr");
+for(var i = 0; i < trs.length; i++){
+    trs[i].addEventListener("click", function(){this.className += " selected";});
+}	
 table.selectAll("tr").on("click",function(d,i){	        
     val = document.getElementById("nbachart1").value
     playerNameMain = d
@@ -581,8 +599,7 @@ table.selectAll("tr").on("click",function(d,i){
 	    {showPlayerInfo (d)}
 	if (document.getElementById("nbachart2").checked)
 	    {drawBarChart(d.Team)}
-//	if (document.getElementById("nbachart3").checked)
-//	    {drawBarChart(d.Team)}
+
     	});
 });
 
