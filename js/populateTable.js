@@ -573,10 +573,10 @@ if (d == "Steals Per Game") {
       }  
     }) // end of click listeners
 // table row click
-
+var playInfo ;
 table.selectAll("tr").on("click",function(d,i){	        
     val = document.getElementById("nbachart1").value
-	var playInfo = d;
+	 playInfo = d;
     if (document.getElementById("nbachart1").checked)
 	    {showPlayerInfo (d)}
 	if (document.getElementById("nbachart2").checked)
