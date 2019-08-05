@@ -182,6 +182,8 @@ d3.json("data.json", function(data) { // loading data from server
   /**  sort functionality **/
   headers
     .on("click", function(d) {
+	  var ths = document.querySelectorAll("th");
+	  ths.forEach(f ,{ f.className ="";}
       if (d == "Player Name") {
         clicks.name++;
         // even number of clicks
