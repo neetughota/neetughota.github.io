@@ -540,8 +540,8 @@ if (d == "Assists Per Game") {
         // odd number of clicks  
         } else if (clicks.apg % 2 != 0) { 
           // sort descending: numerically
-          rows.sort(function(a,b) { 
-		   this.className = 'des';	
+	  this.className = 'des';
+          rows.sort(function(a,b) { 			
             if (+a.APG < +b.APG) { 
               return 1; 
             } else if (+a.APG > +b.APG) { 
