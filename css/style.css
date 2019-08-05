@@ -43,7 +43,6 @@ h1{
   top:10px !important;  
   position: absolute !important;
   font: 12px sans-serif !important;  
-  overflow:auto !important;
 }
 .SearchBar { 
   display: inline; 
@@ -63,6 +62,22 @@ h1{
   font: 10px sans-serif;
   overflow-y: auto;
 }
+table thead tr{
+    display:block;
+}
+table th,table td{
+    width:110px;
+}
+table  tbody{
+  display:block;
+  height:200px;
+  overflow:auto;
+}
+table  tbody{
+  display:block;
+  height:200px;
+  overflow:auto;
+}
 table a:link, a:visited { text-decoration: none; }
 table a:hover, a:active { text-decoration: underline; }
 table, th, td { border: 1px solid black; }
@@ -74,7 +89,7 @@ td, th {
   padding: 5px !important;
   text-align: center !important;
   height: 20px !important;  
-  min-width: 100px !important;
+  min-width: 110px !important;
   font: 12px sans-serif !important;
 }
 th {  
