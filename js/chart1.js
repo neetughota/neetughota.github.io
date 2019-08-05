@@ -26,7 +26,7 @@ var html = '<div class="row" style="margin-right: 15px;margin-left: 15px;margin-
             '<div class="col" ><text font-size:16px> Shot Attempts </text> <div id="chart"> </div> </div> ' +
       '<div class="col" > <text font-size:16px> Shots Made </text> <div id="chart2"> </div> </div> ' +
       '<div class="col" > <text font-size: 16px>Shot Range (%)<div id="chart3"> </div> </div>  </div>' +
-            '<div class="row" style="margin-right: 15px;margin-left: 15px;margin-top: 30px"> <div class="col" > <text font-size:16px> Player Stats </text> <div id="linechart"> </div> </div> ' 
+            '<div class="row" style="margin-right: 15px;margin-left: 15px;margin-top: 30px"> <div class="col" > <text font-size:16px> Player Stats (on a scale of 0-100) </text> <div id="linechart"> </div> </div> ' 
       '</div>';
 
 //var svgid = d3.select("#playerInfo").select("#svg1");
