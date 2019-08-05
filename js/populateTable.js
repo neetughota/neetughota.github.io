@@ -183,7 +183,7 @@ d3.json("data.json", function(data) { // loading data from server
   headers
     .on("click", function(d) {
 	  var ths = document.querySelectorAll("th");
-	  ths.forEach(f ,{ f.className ="";}
+	  ths.forEach(function(f){ f.className ="";})
       if (d == "Player Name") {
         clicks.name++;
         // even number of clicks
