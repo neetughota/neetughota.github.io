@@ -25,6 +25,7 @@
 <script type='text/javascript' src='/js/chart2.js'></script>
 <script type='text/javascript' src='/js/chart3.js'></script>  
 <script type='text/javascript' src='/js/chart4.js'></script>
+<script> var playerNameMain </script> 
 <div class="chartArea"></div>
 <div id="playerInfo"></div>
 <form id="chartOptions">
@@ -33,6 +34,12 @@
    </form> 
 <script>
 populateTable("Points Per Game") 
+var changePlayer= function(){
+    if (document.getElementById("nbachart1").checked)
+	    {showPlayerInfo (playerNameMain)}
+	if (document.getElementById("nbachart2").checked)
+	    {drawBarChart(playerNameMain.Team)}
+}  
 </script>
 </body>
 </html>
