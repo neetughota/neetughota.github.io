@@ -576,6 +576,7 @@ if (d == "Steals Per Game") {
 
 table.selectAll("tr").on("click",function(d,i){	        
     val = document.getElementById("nbachart1").value
+	var playInfo = d;
     if (document.getElementById("nbachart1").checked)
 	    {showPlayerInfo (d)}
 	if (document.getElementById("nbachart2").checked)
@@ -584,15 +585,16 @@ table.selectAll("tr").on("click",function(d,i){
 //	    {drawBarChart(d.Team)}
     	});
 });
-	$("input[name=nbachart]")
+
+$("input[name=nbachart]")
     .on("click", changeEvent);
 
 function changeEvent(event){
   if(event.originalEvent.keyCode == 0){
     if (document.getElementById("nbachart1").checked)
-	    {showPlayerInfo (d)}
+	    {showPlayerInfo (playInfo)}
 	if (document.getElementById("nbachart2").checked)
-	    {drawBarChart(d.Team)}
+	    {drawBarChart(playInfo.Team)}
 //	if (document.getElementById("nbachart3").checked)
 //	    {drawBarChart(d.Team)}
     	});
