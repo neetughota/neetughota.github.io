@@ -595,10 +595,6 @@ function changeEvent(event){
 	    {showPlayerInfo (playInfo)}
 	if (document.getElementById("nbachart2").checked)
 	    {drawBarChart(playInfo.Team)}
-//	if (document.getElementById("nbachart3").checked)
-//	    {drawBarChart(d.Team)}
-    	});
-    //alert("click event");
   }else{
     console.log("keyboard event");
     //alert("keyboard event");
