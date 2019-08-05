@@ -62,7 +62,7 @@ var html = '<div class="row" style="margin-right: 15px;margin-left: 15px;margin-
 	
 	newData_3[ "25TO29FGPt"] = parseInt(player["25TO29FGPt"]);
 	
-	donut(newData_3, "#chart3", [">5 ft", "5 to 9 ft", "10 to 14 ft" ,"15 to 19 ft" ,"20 to 24 ft","25 to 29 ft"]);
+	donut(newData_3, "#chart3", ["< 5 ft", "5 to 9 ft", "10 to 14 ft" ,"15 to 19 ft" ,"20 to 24 ft","25 to 29 ft"]);
 	
    //document.write(html);
 })
