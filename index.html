@@ -29,8 +29,8 @@
 <div class="chartArea"></div>
 <div id="playerInfo"></div>
 <form id="chartOptions">
-  <input  type='radio' id="nbachart1" data-toggle="tooltip" data-placement="bottom" title="Click here to view player's shot efficiency and performance data." name = "nbachart" value="nbachart1" checked>Player Statistics</input>
-  <input type='radio' id="nbachart2" data-toggle="tooltip" data-placement="bottom" title="Click here to compare player's performance against his teammates." name = "nbachart" value="nbachart2">Teammate Comparison</input>
+  <input  type='radio' id="nbachart1" data-toggle="tooltip" data-placement="bottom" title="Click here to view player's shot efficiency and performance data." name = "nbachart" value="nbachart1" checked onChange=changePlayer()>Player Statistics</input>
+  <input type='radio' id="nbachart2" data-toggle="tooltip" data-placement="bottom" title="Click here to compare player's performance against his teammates." name = "nbachart" value="nbachart2" onChange=changePlayer()>Teammate Comparison</input>
    </form> 
 <script>
 populateTable("Points Per Game") 
