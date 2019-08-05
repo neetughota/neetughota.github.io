@@ -186,6 +186,7 @@ d3.json("data.json", function(data) { // loading data from server
         clicks.name++;
         // even number of clicks
         if (clicks.name % 2 == 0) {
+		 this.className = 'aes';	
           // sort ascending: alphabetically
           rows.sort(function(a,b) { 
             if (a.Name.toUpperCase() < b.Name.toUpperCase()) { 
@@ -199,6 +200,7 @@ d3.json("data.json", function(data) { // loading data from server
         // odd number of clicks  
         } else if (clicks.name % 2 != 0) { 
           // sort descending: alphabetically
+		 this.className = 'des';	
           rows.sort(function(a,b) { 
             if (a.Name.toUpperCase() < b.Name.toUpperCase()) { 
               return 1; 
@@ -214,6 +216,7 @@ d3.json("data.json", function(data) { // loading data from server
         clicks.position++;
         // even number of clicks
         if (clicks.position % 2 == 0) {
+		 this.className = 'aes';	
           // sort ascending: alphabetically
           rows.sort(function(a,b) { 
             if (a.Position.toUpperCase() < b.Position.toUpperCase()) { 
@@ -226,6 +229,7 @@ d3.json("data.json", function(data) { // loading data from server
           });
         // odd number of clicks  
         } else if (clicks.position % 2 != 0) { 
+		 this.className = 'des';	
           // sort descending: alphabetically
           rows.sort(function(a,b) { 
             if (a.Position.toUpperCase() < b.Position.toUpperCase()) { 
@@ -243,6 +247,7 @@ d3.json("data.json", function(data) { // loading data from server
 	    clicks.games_played++;
         // even number of clicks
         if (clicks.games_played % 2 == 0) {
+		 this.className = 'aes';	
           // sort ascending: numerically
           rows.sort(function(a,b) { 
             if (+a.GP < +b.GP) { 
@@ -256,6 +261,7 @@ d3.json("data.json", function(data) { // loading data from server
         // odd number of clicks  
         } else if (clicks.games_played % 2 != 0) { 
           // sort descending: numerically
+		 this.className = 'des';	
           rows.sort(function(a,b) { 
             if (+a.GP < +b.GP) { 
               return 1; 
@@ -271,6 +277,7 @@ d3.json("data.json", function(data) { // loading data from server
 	    clicks.ppg++;
         // even number of clicks
         if (clicks.ppg % 2 == 0) {
+		 this.className = 'aes';	
           // sort ascending: numerically
           rows.sort(function(a,b) { 
             if (+a.PPG < +b.PPG) { 
@@ -283,6 +290,7 @@ d3.json("data.json", function(data) { // loading data from server
           });
         // odd number of clicks  
         } else if (clicks.ppg % 2 != 0) { 
+		 this.className = 'des';	
           // sort descending: numerically
           rows.sort(function(a,b) { 
             if (+a.PPG < +b.PPG) { 
@@ -299,6 +307,7 @@ d3.json("data.json", function(data) { // loading data from server
         clicks.team++;
         // even number of clicks
         if (clicks.team % 2 == 0) {
+		 this.className = 'aes';	
           // sort ascending: alphabetically
           rows.sort(function(a,b) { 
             if (a.Team.toUpperCase() < b.Team.toUpperCase()) { 
@@ -311,6 +320,7 @@ d3.json("data.json", function(data) { // loading data from server
           });
         // odd number of clicks  
         } else if (clicks.team % 2 != 0) { 
+		 this.className = 'des';	
           // sort descending: alphabetically
           rows.sort(function(a,b) { 
             if (a.Team.toUpperCase() < b.Team.toUpperCase()) { 
@@ -328,6 +338,7 @@ if (d == "Age") {
 	    clicks.age++;
         // even number of clicks
         if (clicks.age % 2 == 0) {
+		 this.className = 'aes';	
           // sort ascending: numerically
           rows.sort(function(a,b) { 
             if (+a.Age < +b.Age) { 
@@ -340,6 +351,7 @@ if (d == "Age") {
           });
         // odd number of clicks  
         } else if (clicks.age % 2 != 0) { 
+		 this.className = 'des';	
           // sort descending: numerically
           rows.sort(function(a,b) { 
             if (+a.Age < +b.Age) { 
@@ -358,6 +370,7 @@ if (d == "Games Played") {
 	    clicks.games++;
         // even number of clicks
         if (clicks.games % 2 == 0) {
+		 this.className = 'aes';	
           // sort ascending: numerically
           rows.sort(function(a,b) { 
             if (+a.GP < +b.GP) { 
@@ -370,6 +383,7 @@ if (d == "Games Played") {
           });
         // odd number of clicks  
         } else if (clicks.games % 2 != 0) { 
+		 this.className = 'des';	
           // sort descending: numerically
           rows.sort(function(a,b) { 
             if (+a.GP < +b.GP) { 
@@ -387,6 +401,7 @@ if (d == "Minutes Per Game") {
 	    clicks.mpg++;
         // even number of clicks
         if (clicks.mpg % 2 == 0) {
+		 this.className = 'aes';	
           // sort ascending: numerically
           rows.sort(function(a,b) { 
             if (+a.MPG < +b.MPG) { 
@@ -399,6 +414,7 @@ if (d == "Minutes Per Game") {
           });
         // odd number of clicks  
         } else if (clicks.mpg % 2 != 0) { 
+		 this.className = 'des';	
           // sort descending: numerically
           rows.sort(function(a,b) { 
             if (+a.MPG < +b.MPG) { 
@@ -416,6 +432,7 @@ if (d == "Minutes Per Game") {
 	    clicks.uper++;
         // even number of clicks
         if (clicks.uper % 2 == 0) {
+		 this.className = 'aes';	
           // sort ascending: numerically
           rows.sort(function(a,b) { 
             if (+a.UsagePt < +b.UsagePt) { 
@@ -428,6 +445,7 @@ if (d == "Minutes Per Game") {
           });
         // odd number of clicks  
         } else if (clicks.uper % 2 != 0) { 
+		 this.className = 'des';	
           // sort descending: numerically
           rows.sort(function(a,b) { 
             if (+a.UsagePt < +b.UsagePt) { 
@@ -445,6 +463,7 @@ if (d == "Minutes Per Game") {
 	    clicks.offrating++;
         // even number of clicks
         if (clicks.offrating % 2 == 0) {
+		 this.className = 'aes';	
           // sort ascending: numerically
           rows.sort(function(a,b) { 
             if (+a.OffRating < +b.OffRating) { 
@@ -457,6 +476,7 @@ if (d == "Minutes Per Game") {
           });
         // odd number of clicks  
         } else if (clicks.offrating % 2 != 0) { 
+		 this.className = 'des';	
           // sort descending: numerically
           rows.sort(function(a,b) { 
             if (+a.OffRating < +b.OffRating) { 
@@ -475,6 +495,7 @@ if (d == "Defensive Rating") {
 	    clicks.defrating++;
         // even number of clicks
         if (clicks.defrating % 2 == 0) {
+		 this.className = 'aes';	
           // sort ascending: numerically
           rows.sort(function(a,b) { 
             if (+a.DefRating < +b.DefRating) { 
@@ -487,6 +508,7 @@ if (d == "Defensive Rating") {
           });
         // odd number of clicks  
         } else if (clicks.defrating % 2 != 0) { 
+		 this.className = 'des';	
           // sort descending: numerically
           rows.sort(function(a,b) { 
             if (+a.DefRating < +b.DefRating) { 
@@ -504,6 +526,7 @@ if (d == "Assists Per Game") {
 	    clicks.apg++;
         // even number of clicks
         if (clicks.apg % 2 == 0) {
+		 this.className = 'aes';	
           // sort ascending: numerically
           rows.sort(function(a,b) { 
             if (+a.APG < +b.APG) { 
@@ -518,6 +541,7 @@ if (d == "Assists Per Game") {
         } else if (clicks.apg % 2 != 0) { 
           // sort descending: numerically
           rows.sort(function(a,b) { 
+		   this.className = 'des';	
             if (+a.APG < +b.APG) { 
               return 1; 
             } else if (+a.APG > +b.APG) { 
@@ -533,6 +557,7 @@ if (d == "Rebounds Per Game") {
 	    clicks.rpg++;
         // even number of clicks
         if (clicks.rpg % 2 == 0) {
+		 this.className = 'aes';	
           // sort ascending: numerically
           rows.sort(function(a,b) { 
             if (+a.RPG < +b.RPG) { 
@@ -545,6 +570,7 @@ if (d == "Rebounds Per Game") {
           });
         // odd number of clicks  
         } else if (clicks.rpg % 2 != 0) { 
+		 this.className = 'des';	
           // sort descending: numerically
           rows.sort(function(a,b) { 
             if (+a.RPG < +b.RPG) { 
@@ -562,6 +588,7 @@ if (d == "Steals Per Game") {
 	    clicks.spg++;
         // even number of clicks
         if (clicks.spg % 2 == 0) {
+		 this.className = 'aes';	
           // sort ascending: numerically
           rows.sort(function(a,b) { 
             if (+a.SPG < +b.SPG) { 
@@ -574,6 +601,7 @@ if (d == "Steals Per Game") {
           });
         // odd number of clicks  
         } else if (clicks.spg % 2 != 0) { 
+		 this.className = 'des';	
           // sort descending: numerically
           rows.sort(function(a,b) { 
             if (+a.SPG < +b.SPG) { 
