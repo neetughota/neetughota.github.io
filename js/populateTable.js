@@ -573,10 +573,10 @@ if (d == "Steals Per Game") {
       }  
     }) // end of click listeners
 // table row click
-var playInfo ;
+
 table.selectAll("tr").on("click",function(d,i){	        
     val = document.getElementById("nbachart1").value
-	 playInfo = d;
+	
     if (document.getElementById("nbachart1").checked)
 	    {showPlayerInfo (d)}
 	if (document.getElementById("nbachart2").checked)
@@ -586,19 +586,5 @@ table.selectAll("tr").on("click",function(d,i){
     	});
 });
 
-$("input[name=nbachart]")
-    .on("click", changeEvent);
 
-function changeEvent(event){
-  if(event.originalEvent.keyCode == 0){
-    if (document.getElementById("nbachart1").checked)
-	    {showPlayerInfo (playInfo)}
-	if (document.getElementById("nbachart2").checked)
-	    {drawBarChart(playInfo.Team)}
-  }else{
-    console.log("keyboard event");
-    //alert("keyboard event");
-    event.preventDefault();
-  }  
-}
 } //end of function
